@@ -11,10 +11,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		505D0819B263592F27B3D9EE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7280CE062E93E7D60080BFA9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7280CE052E93E7D60080BFA9 /* File.swift */; };
-		7280CE122E93EDAF0080BFA9 /* LUTs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7280CE112E93EDAF0080BFA9 /* LUTs.bundle */; };
-		7280CE2A2E93F3A30080BFA9 /* LUT_64_SaiGon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7280CE272E93F3A30080BFA9 /* LUT_64_SaiGon.png */; };
-		7280CE2B2E93F3A30080BFA9 /* LUT_64_Tokyo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7280CE282E93F3A30080BFA9 /* LUT_64_Tokyo.png */; };
-		7280CE2C2E93F3A30080BFA9 /* LUT_64_California.png in Resources */ = {isa = PBXBuildFile; fileRef = 7280CE292E93F3A30080BFA9 /* LUT_64_California.png */; };
+		7280CE2E2E93FD640080BFA9 /* Stickers.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7280CE2D2E93FD640080BFA9 /* Stickers.bundle */; };
+		7280CE302E93FE070080BFA9 /* LUTs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7280CE2F2E93FE070080BFA9 /* LUTs.bundle */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -29,10 +27,8 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-photoeditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-photoeditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7280CE052E93E7D60080BFA9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		7280CE0E2E93E90B0080BFA9 /* photoeditor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "photoeditor-Bridging-Header.h"; sourceTree = "<group>"; };
-		7280CE112E93EDAF0080BFA9 /* LUTs.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LUTs.bundle; sourceTree = "<group>"; };
-		7280CE272E93F3A30080BFA9 /* LUT_64_SaiGon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_64_SaiGon.png; sourceTree = "<group>"; };
-		7280CE282E93F3A30080BFA9 /* LUT_64_Tokyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_64_Tokyo.png; sourceTree = "<group>"; };
-		7280CE292E93F3A30080BFA9 /* LUT_64_California.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_64_California.png; sourceTree = "<group>"; };
+		7280CE2D2E93FD640080BFA9 /* Stickers.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stickers.bundle; sourceTree = "<group>"; };
+		7280CE2F2E93FE070080BFA9 /* LUTs.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LUTs.bundle; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = photoeditor/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = photoeditor/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -60,7 +56,8 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				7280CE052E93E7D60080BFA9 /* File.swift */,
 				7280CE0E2E93E90B0080BFA9 /* photoeditor-Bridging-Header.h */,
-				7280CE112E93EDAF0080BFA9 /* LUTs.bundle */,
+				7280CE2D2E93FD640080BFA9 /* Stickers.bundle */,
+				7280CE2F2E93FE070080BFA9 /* LUTs.bundle */,
 			);
 			name = photoeditor;
 			sourceTree = "<group>";
@@ -84,9 +81,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				7280CE292E93F3A30080BFA9 /* LUT_64_California.png */,
-				7280CE282E93F3A30080BFA9 /* LUT_64_Tokyo.png */,
-				7280CE272E93F3A30080BFA9 /* LUT_64_SaiGon.png */,
 				13B07FAE1A68108700A75B9A /* photoeditor */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -175,13 +169,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7280CE2A2E93F3A30080BFA9 /* LUT_64_SaiGon.png in Resources */,
-				7280CE2B2E93F3A30080BFA9 /* LUT_64_Tokyo.png in Resources */,
-				7280CE2C2E93F3A30080BFA9 /* LUT_64_California.png in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				7280CE302E93FE070080BFA9 /* LUTs.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7280CE2E2E93FD640080BFA9 /* Stickers.bundle in Resources */,
 				505D0819B263592F27B3D9EE /* PrivacyInfo.xcprivacy in Resources */,
-				7280CE122E93EDAF0080BFA9 /* LUTs.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

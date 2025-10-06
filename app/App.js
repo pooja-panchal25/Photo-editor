@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-import ImagePicker from 'react-native-image-picker';
+import {launchImageLibrary} from 'react-native-image-picker';
 import PhotoEditor from '@baronha/react-native-photo-editor';
 
 const { width } = Dimensions.get('window');
@@ -17,16 +17,7 @@ const App = () => {
   const remoteURL =
     'https://images.unsplash.com/photo-1634915728822-5ad85582837a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80';
 
-  const openPicker = () => {
-    ImagePicker.openPicker({ singleSelectedMode: true })
-      .then((result) => {
-        console.log('result', result);
-        setPhoto(result[0]);
-      })
-      .then((e) => {
-        // console.log('error');
-      });
-  };
+
 
   const onEdit = async () => {
     try {
@@ -44,7 +35,23 @@ const App = () => {
       console.log('e', e);
     }
   };
+const openPicker = () => {
+  const options = {
+    mediaType: 'photo', // or 'mixed' if you also want videos
+    selectionLimit: 1,  // allows only one image to be selected
+  };
 
+  launchImageLibrary(options, (response) => {
+    if (response.didCancel) {
+      console.log('User cancelled image picker');
+    } else if (response.errorCode) {
+      console.log('ImagePicker Error:', response.errorMessage);
+    } else if (response.assets && response.assets.length > 0) {
+      console.log('result', response.assets[0]);
+      setPhoto(response.assets[0]);
+    }
+  });
+};
   return (
     <SafeAreaView style={style.container}>
       <TouchableOpacity onPress={onEdit}>
