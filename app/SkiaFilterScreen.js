@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { SafeAreaView, View, TouchableOpacity, Text, StyleSheet, ScrollView } from 'react-native';
+import {  View, TouchableOpacity, Text, StyleSheet, ScrollView } from 'react-native';
 import { Canvas, Image as SkiaImage, useImage, Paint, ColorMatrix } from '@shopify/react-native-skia';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const SkiaFilterScreen = () => {
   const image = useImage('https://images.unsplash.com/photo-1634915728822-5ad85582837a?auto=format&fit=crop&w=774&q=80');

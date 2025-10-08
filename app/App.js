@@ -1,10 +1,11 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import {  StyleSheet, TouchableOpacity, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import PhotoEditorScreen from './PhotoEditorScreen';
 import SkiaFilterScreen from './SkiaFilterScreen';
 import GiphyScreen from './GiphyScreen';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 const Stack = createStackNavigator();
@@ -16,21 +17,21 @@ const HomeScreen = ({ navigation }) => {
         style={styles.button}
         onPress={() => navigation.navigate('PhotoEditor')}
       >
-        <Text style={styles.text}>Open Photo Editor</Text>
+        <Text style={styles.text}>{"Open Photo Editor"}</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('SkiaFilter')}
       >
-        <Text style={styles.text}>Open Skia Filter</Text>
+        <Text style={styles.text}>{"Open Skia Filter"}</Text>
       </TouchableOpacity>
 
         <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('Giphy')}
       >
-        <Text style={styles.text}>Giphy </Text>
+        <Text style={styles.text}>{"Giphy"}</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
