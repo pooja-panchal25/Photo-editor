@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  SafeAreaView,
   Text,
   StyleSheet,
   Dimensions,
@@ -9,6 +8,7 @@ import {
 } from 'react-native';
 import { launchImageLibrary } from 'react-native-image-picker';
 import PhotoEditor from '@baronha/react-native-photo-editor';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const { width } = Dimensions.get('window');
 const stickers = []; // Add your sticker assets if needed
