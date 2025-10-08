@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import PhotoEditorScreen from './PhotoEditorScreen';
 import SkiaFilterScreen from './SkiaFilterScreen';
+import GiphyScreen from './GiphyScreen';
+
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,13 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.text}>Open Skia Filter</Text>
       </TouchableOpacity>
+
+        <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Giphy')}
+      >
+        <Text style={styles.text}>Giphy </Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -34,6 +43,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="PhotoEditor" component={PhotoEditorScreen} />
         <Stack.Screen name="SkiaFilter" component={SkiaFilterScreen} />
+        <Stack.Screen name="Giphy" component={GiphyScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

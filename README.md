@@ -99,3 +99,6 @@ To learn more about React Native, take a look at the following resources:
 
 
 I’ve already committed the PhotoEditorModule.kt in the project root. After installing the node modules, please replace the library’s PhotoEditorModule.kt located at node_modules/@baronha/react-native-photo-editor/android/src/main/java/com/reactnativephotoeditor/PhotoEditorModule.kt with the one from the project root.
+
+
+node_modules/@baronha/react-native-photo-editor/ios/sticker/StickerView.swift
